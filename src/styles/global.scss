@@ -216,6 +216,7 @@ a {
   margin-top: 32px;
 }
 .card {
+  height: 328px;
   display: grid;
   background-color: var(--card-bg);
   border-radius: 9px;
@@ -227,6 +228,8 @@ a {
     color: var(--primary-color);
   }
   > a img {
+    height: 220px;
+    width: 356.66px;
     display: block;
   }
   > header {
