@@ -35,24 +35,24 @@ export default IndexPage
 export const pageQuery = graphql`
     query indexPageQuery {
         site {
-            siteMetadata {
+        siteMetadata {
+            title
+            description
+        }
+        }
+        allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {published: {eq: true}}}) {
+        edges {
+            node {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                path
                 title
-                description
+                thumbnail
+            }
             }
         }
-        allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-            edges {
-                node {
-                    id
-                    excerpt(pruneLength: 250)
-                    frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
-                        path
-                        title
-                        thumbnail
-                    }
-                }
-            }
         }
     }
 `
