@@ -9,7 +9,7 @@
   "apple": "null",
   "google": "null",
   "linkedin": "null",
-  "imageHeader" : "https://podboxx-production.s3.amazonaws.com/images/logo_podboxx.svg",
+  "imageHeader" : "https://podboxx-production.s3.amazonaws.com/images/header_blog.png",
 
   "home": {
     "title": "PodBoxx",
